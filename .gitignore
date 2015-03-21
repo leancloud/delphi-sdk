@@ -1,0 +1,4 @@
+*.local
+*.identcache
+*.dcu
+*.exe

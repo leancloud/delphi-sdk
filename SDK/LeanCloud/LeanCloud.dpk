@@ -1,0 +1,46 @@
+package LeanCloud;
+
+{$R *.res}
+{$R LeanCloud.dcr}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  CustomIPTransport,
+  bindengine,
+  bindcomp,
+  RESTBackendComponents,
+  RESTComponents;
+
+contains
+  REST.Backend.LeanCloudAPI in 'REST.Backend.LeanCloudAPI.pas',
+  REST.Backend.LeanCloudMetaTypes in 'REST.Backend.LeanCloudMetaTypes.pas',
+  REST.Backend.LeanCloudProvider in 'REST.Backend.LeanCloudProvider.pas',
+  REST.Backend.LeanCloudPushDevice in 'REST.Backend.LeanCloudPushDevice.pas',
+  REST.Backend.LeanCloudServices in 'REST.Backend.LeanCloudServices.pas';
+
+end.
