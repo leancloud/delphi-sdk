@@ -1,4 +1,4 @@
-Delphi SDK for LeanCloud BaaS demo
+[NO MAINTAINED] Delphi SDK for LeanCloud BaaS demo
 ==================================
 
 捐献者
